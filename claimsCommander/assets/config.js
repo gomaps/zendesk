@@ -1,0 +1,1 @@
+var remotePath = "/claim-commands"
