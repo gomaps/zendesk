@@ -1,8 +1,8 @@
 {
   "app": {
-    "name": "Zen Tunes",
-    "short_description": "Play the famous zen tunes in your help desk.",
-    "long_description": "Play the famous zen tunes in your help desk and \n listen to the beats it has to offer.",
+    "name": "Claims Commander",
+    "short_description": "Go claims commands",
+    "long_description": "Handle Go claims using commands for \n payments, emails etc..",
     "installation_instructions": "Simply click install."
   }
 }
