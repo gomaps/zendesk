@@ -10,7 +10,7 @@ function initZDApp() {
   
   window.addEventListener('message', event => {
     // IMPORTANT: check the origin of the data! 
-    if (event.origin.startsWith('http://localhost:3000')) {
+    if (event.origin.startsWith(remoteURL)) {
       // The data was sent from your site.
       console.log("Query:\n" + JSON.stringify(event.data, null, 4));
       if (event.data.type === 'height') {
