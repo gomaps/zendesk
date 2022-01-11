@@ -18,7 +18,7 @@ function initZDApp() {
       } else if (event.data.type === 'context') {
         client.context().then(function(obj) {
           const iframe = document.querySelector("iframe");
-          iframe.contentWindow.postMessage({'type': event.data.type, 'obj': obj}, "http://localhost:3000")          
+          iframe.contentWindow.postMessage({'type': event.data.type, 'obj': obj}, remoteURL)          
         });
       } else if (event.data.type === 'post') {
         console.log("Post note for deal ID: " + dealID)
@@ -48,7 +48,7 @@ function initZDApp() {
       } else {
         client.get(event.data.type).then(function(obj) {
           const iframe = document.querySelector("iframe");
-          iframe.contentWindow.postMessage({'type': event.data.type, 'obj': obj}, "http://localhost:3000")          
+          iframe.contentWindow.postMessage({'type': event.data.type, 'obj': obj}, remoteURL)          
         });
       }
     } else {
