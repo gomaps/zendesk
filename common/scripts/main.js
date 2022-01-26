@@ -42,6 +42,8 @@ function initZDApp() {
                 "type": "note"
               }
             })
+          }).then(function(data) {
+            iframe.contentWindow.postMessage({'type': 'posted', 'obj': data}, remoteURL)
           }).catch(function(error) {
             console.log("Notes error: " + error.toString()); // "APIUnavailable: "nonExistentPath" Could not find handler for: "nonExistentPath"
           })
