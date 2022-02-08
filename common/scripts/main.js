@@ -21,7 +21,6 @@ function initZDApp() {
           iframe.contentWindow.postMessage({'type': event.data.type, 'obj': obj}, remoteURL)          
         });
       } else if (event.data.type === 'post') {
-        console.log("Post note for deal ID: " + dealID)
         client.request({
             url: '/v2/notes',
             type: 'POST',
@@ -32,10 +31,7 @@ function initZDApp() {
                 "resource_id": dealID,
                 "content": event.data.note,
                 "is_important": false,
-                "tags": [
-                  "Claims Commander",
-                  event.data.tag
-                ],
+                "tags": event.data.tags,
                 "type": "regular"
               },
               "meta": {
@@ -43,6 +39,7 @@ function initZDApp() {
               }
             })
           }).then(function(data) {
+            const iframe = document.querySelector("iframe")
             iframe.contentWindow.postMessage({'type': 'posted', 'obj': data}, remoteURL)
           }).catch(function(error) {
             console.log("Notes error: " + error.toString()); // "APIUnavailable: "nonExistentPath" Could not find handler for: "nonExistentPath"
