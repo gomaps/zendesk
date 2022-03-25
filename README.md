@@ -8,7 +8,7 @@ https://stackoverflow.com/questions/53135863/macos-mojave-ruby-config-h-file-not
 **CREATE NEW APP:**
 make APP={app-dir-name} new
 
-e.g. in order to create a new app claimsCommander in folder testClaims -
+e.g. in order to create a new app claimsCommander in folder claimsCommander -
 
 dinesh:zendesk gomaps$ make APP=claimsCommander new
 zat new
