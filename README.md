@@ -1,5 +1,6 @@
 **TOOLS installation:**
 To get started install zat using https://developer.zendesk.com/documentation/apps/zendesk-app-tools-zat/installing-and-using-the-zendesk-apps-tools/
+
 Following links will help in case there are issues during the installation -
 https://www.py4u.net/discuss/1650713
 https://stackoverflow.com/questions/53135863/macos-mojave-ruby-config-h-file-not-found
@@ -10,7 +11,8 @@ make APP={app-dir-name} new
 
 e.g. in order to create a new app claimsCommander in folder claimsCommander -
 
-dinesh:zendesk gomaps$ make APP=claimsCommander new
+```
+$ make APP=claimsCommander new
 zat new
 Enter this app author's name:
  Dinesh Nair
@@ -36,17 +38,22 @@ Enter the remote path (https://agents.gosafeinsurance.com/{path}): claim-command
 cp ./common/Makefile ./claimsCommander
 rm ./claimsCommander/assets/iframe.html
 rm ./claimsCommander/assets/logo*
+```
 
 **RUNNING LOCAL:**
+```
 cd ./claimsCommander
 make local
+```
 
 This will copy the relevant files from ./common and run locally. This configuration expects remote server to be running at http://localhost:3000. In order to test the app - load any deal with the "zat=true" query param. For e.g. https://app.futuresimple.com/sales/deals/113096047?zat=true
 
 
 **BUILDING FOR DEV/PROD:**
+```
 cd ./claimsCommander
 make dev (or make prod)
+```
 
 This will copy the relevant files from ./common and create dev.zip or prod.zip in the build folder. This can be uploaded to the Sell portal using the Settings
 
