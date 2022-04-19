@@ -37,6 +37,14 @@ cp ./common/Makefile ./claimsCommander
 rm ./claimsCommander/assets/iframe.html
 rm ./claimsCommander/assets/logo*
 
+**Update the manifest.json -** by default it creates location param for ZD Support - update it for ZD Sell - 
+  "location": {
+     "sell": {
+     "deal_card": "assets/iframe.html"
+    }
+  },
+
+
 **RUNNING LOCAL:**
 cd ./claimsCommander
 make local
