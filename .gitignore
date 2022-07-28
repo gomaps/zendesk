@@ -1,6 +1,8 @@
 **/.DS_Store
 **/.zat
-**/assets
+**/assets/iframe.html
+**/assets/logo*
+**/assets/common
 **/build
 .devcontainer
 .vscode
