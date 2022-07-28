@@ -1,6 +1,6 @@
 new:
 	zat new
-	@read -p "Enter the remote path (https://agents.gosafeinsurance.com/{path}): " REMOTE_PATH; \
+	@read -p "Enter the remote path (https://agents.gocarinsurance.com/{path}): " REMOTE_PATH; \
 	echo "var remotePath = \"/$$REMOTE_PATH\"" > ./$(APP)/assets/config.js
 	cp ./common/Makefile ./$(APP)
 	rm ./$(APP)/assets/iframe.html

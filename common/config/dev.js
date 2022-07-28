@@ -1,1 +1,1 @@
-var remoteURL = "https://agents-dev.gosafeinsurance.com"
+var remoteURL = 'https://agents-dev.gocarinsurance.com'

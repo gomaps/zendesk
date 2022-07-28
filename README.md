@@ -34,7 +34,7 @@ Enter a directory name to save the new app (will create the dir if it does not e
       create  claimsCommander/assets/logo.svg
       create  claimsCommander/manifest.json
       create  claimsCommander/translations/en.json
-Enter the remote path (https://agents.gosafeinsurance.com/{path}): claim-commands
+Enter the remote path (https://agents.gocarinsurance.com/{path}): claim-commands
 cp ./common/Makefile ./claimsCommander
 rm ./claimsCommander/assets/iframe.html
 rm ./claimsCommander/assets/logo*
