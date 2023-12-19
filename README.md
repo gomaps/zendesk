@@ -27,8 +27,8 @@ ruby -v  # Verify the correct version.
 Installing ZAT:
 ```console
 gem install rake
-gem install nokogiri -v 1.13.10
-gem install zendesk_apps_tools
+sudo gem install nokogiri -v 1.13.10
+sudo gem install zendesk_apps_tools
 zat -v  # Verify ZAT installation.
 ```
 
